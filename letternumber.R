@@ -272,10 +272,12 @@ riddler(c(300:350)) %>% arrange(desc(value))
 riddler(c(287,297)) %>% arrange(desc(number))
 riddler(c(277,278,279)) %>% arrange(desc(number))
 
-# While the by hand method (though computer assisted in this case). A more brute force
-# computer assisted method can provide some nice detail.First, we can see showing that single digit
-# is important. Without it, 270 does not meet the standard of numeric > alphanumeric. Additionally,
-# the graphical view shows the benefits of the tens, but the decreasing yields into the
+# While the by hand method (though computer assisted in this case). A more brute force,
+# computer assisted method can provide some nice detail. First, we get the same answer of 279.
+# Second, we can see that adding "AND" for grammatical purposes opens up 297, 294, 293, 292,
+# 287, 284, and 282 which otherwise wouldn't have been options. Third, we can see that the single digit
+# level is pretty important. Without it, 270 does not meet the standard of numeric > alphanumeric. 
+# Additionally, the graphical view shows the benefits of the tens, but the decreasing yields into the
 # hundreds and thousands. We can also see that the alphanumeric per numeric has decreasing value
 # as the numeric increases. It appears similar to an exponential decay, though, not smooth. A final
 # novelty noted was that there are no numeric values equal to alphanumeric values, but there 
